@@ -1,0 +1,87 @@
+/* ShoreSquad Styles */
+:root {
+  --ocean-blue: #2196F3;
+  --sand-yellow: #FFEB3B;
+  --coral-orange: #FF7043;
+  --seafoam-green: #26D7AE;
+  --clean-white: #FFFFFF;
+  --charcoal: #222831;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--clean-white);
+  color: var(--charcoal);
+}
+
+header {
+  background: var(--ocean-blue);
+  color: var(--clean-white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--clean-white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  background: linear-gradient(90deg, var(--ocean-blue) 60%, var(--seafoam-green) 100%);
+  color: var(--clean-white);
+  padding: 2rem;
+  text-align: center;
+}
+
+#join-btn {
+  background: var(--coral-orange);
+  color: var(--clean-white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+#join-btn:hover {
+  background: var(--sand-yellow);
+  color: var(--charcoal);
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.05);
+}
+
+footer {
+  background: var(--charcoal);
+  color: var(--clean-white);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  section {
+    padding: 0.5rem;
+  }
+}
