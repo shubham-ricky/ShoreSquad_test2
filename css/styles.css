@@ -76,6 +76,36 @@ footer {
   margin-top: 2rem;
 }
 
+/* Weather forecast grid styles */
+.forecast-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.forecast-day {
+  background: var(--seafoam-green, #26D7AE);
+  color: var(--charcoal, #222831);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  min-width: 120px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.08);
+  text-align: center;
+}
+.forecast-date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.forecast-desc {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.forecast-temp {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -83,5 +113,13 @@ footer {
   }
   section {
     padding: 0.5rem;
+  }
+  .forecast-grid {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+  .forecast-day {
+    min-width: 90%;
   }
 }
