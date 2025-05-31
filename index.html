@@ -24,8 +24,25 @@
       <button id="join-btn">Join a Cleanup</button>
     </section>
     <section id="map">
-      <h3>Cleanup Map</h3>
-      <div id="map-container">Loading map...</div>
+      <h3>Find Your Beach</h3>
+      <div id="map-container" style="position:relative;">
+        <!-- Google Maps iframe with pin at Pasir Ris Beach -->
+        <iframe
+          title="Next Cleanup Location"
+          width="100%"
+          height="350"
+          frameborder="0"
+          style="border:0; border-radius: 18px;"
+          src="https://www.google.com/maps?q=1.381497,103.955574&hl=en&z=16&output=embed"
+          allowfullscreen
+        ></iframe>
+        <div style="position:absolute;top:18px;left:18px;z-index:2;">
+          <span style="display:flex;align-items:center;background:#FF7043;color:#fff;font-weight:bold;padding:0.5rem 1.2rem;border-radius:24px;font-size:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='none' viewBox='0 0 24 24' style='margin-right:8px;'><path fill='#fff' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 6.13 12.32 6.4 12.6.37.37.97.37 1.34 0C12.87 21.32 19 14.25 19 9c0-3.87-3.13-7-7-7zm0 16.88C10.14 16.1 7 12.28 7 9a5 5 0 1110 0c0 3.28-3.14 7.1-5 9.88z'/><circle cx='12' cy='9' r='2.5' fill='#fff'/></svg>
+            Next Cleanup: Pasir Ris Beach
+          </span>
+        </div>
+      </div>
     </section>
     <section id="weather">
       <h3>Current Weather</h3>

@@ -7,8 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     alert('Thanks for joining a cleanup! Stay tuned for more features.');
   });
 
-  // Placeholder: Load map (to be replaced with real map integration)
-  document.getElementById('map-container').innerText = 'Map will appear here.';
+  // Remove placeholder map text if iframe is present
+  const mapContainer = document.getElementById('map-container');
+  if (mapContainer && mapContainer.querySelector('iframe')) {
+    // Do nothing, iframe is present
+  } else if (mapContainer) {
+    mapContainer.innerText = 'Map will appear here.';
+  }
 
   // Placeholder: Load weather (to be replaced with real API)
   document.getElementById('weather-info').innerText = 'Sunny, 28°C (demo)';
